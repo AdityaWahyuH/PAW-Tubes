@@ -11,7 +11,7 @@
             <div class="col-lg-3 col-xl-2">
                 <div class="d-grid gap-2">
                     <a href="{{ route('employees.create') }}" class="btn btn-primary btn-sm">
-                        <i class="bi-plus-circle me-2"></i> Create Employee
+                        <i class="bi-plus-circle me-2"></i> Tambahkan Barang
                     </a>
                 </div>
             </div>
@@ -22,21 +22,21 @@
             <table class="table table-bordered table-hover table-striped mb-0 bg-white">
                 <thead>
                     <tr>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>Email</th>
-                        <th>Age</th>
-                        <th>Position</th>
+                        <th>Nama Mahasiswa</th>
+                        <th>Prodi</th>
+                        <th>Barang Pinjam</th>
+                        <th>Tanggal Pinjam</th>
+                        <th>Tanggal Kembali</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($employees as $employee)
                         <tr>
-                            <td>{{ $employee->firstname }}</td>
-                            <td>{{ $employee->lastname }}</td>
-                            <td>{{ $employee->email }}</td>
-                            <td>{{ $employee->age }}</td>
+                            <td>{{ $employee->namaMahasiswa }}</td>
+                            <td>{{ $employee->prodi }}</td>
+                            <td>{{ $employee->barangPinjam }}</td>
+                            <td>{{ $employee->tanggalPinjam }}</td>
                             <td>{{ $employee->position->name }}</td>
                             <td>@include('employee.actions')</td>
                         </tr>
