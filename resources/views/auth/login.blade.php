@@ -35,7 +35,7 @@
             width: 35px;
             height: 40px;
             margin: 0 auto 20px;
-            background-color: #007bff;
+            background-color: #b7b9bb;
             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
         }
 
@@ -116,7 +116,7 @@
 <body>
     <div class="login-container">
         <div class="icon"></div>
-        <h2>Employee Data Master</h2>
+        <h2>Logistic Asset Management</h2>
 
         <!-- Form Login -->
         <form action="{{ route('login') }}" method="POST">
