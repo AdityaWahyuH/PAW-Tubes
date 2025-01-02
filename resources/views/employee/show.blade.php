@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Detail Employee')
+@section('title', 'Detail Nama Barang')
 
 @section('content')
     <div class="container-sm my-5">
@@ -8,12 +8,12 @@
             <div class="p-5 bg-light rounded-3 col-xl-4 border">
                 <div class="mb-3 text-center">
                     <i class="bi-person-circle fs-1"></i>
-                    <h4>Detail Employee</h4>
+                    <h4>Detail Nama Barang</h4>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-md-4 mb-3">
-                        <label for="firstName" class="form-label">First
+                        <label for="firstName" class="form-label">NIM
                             Name</label>
                         <h5>{{ $employee->firstname }}</h5>
                     </div>
@@ -27,16 +27,16 @@
                         <h5>{{ $employee->age }}</h5>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="email" class="form-label">Email</label>
+                        <label for="email" class="form-label">Nama Barang</label>
                         <h5>{{ $employee->email }}</h5>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="age" class="form-label">Position</label>
+                        <label for="age" class="form-label">Tanggal Peminjaman</label>
                         <h5>{{ $employee->position->name }}</h5>
                     </div>
                     <div class="col-md-12 mb-3">
-                        <label for="age" class="form-label">Curriculum Vitae
-                            (CV)</label>
+                        <label for="age" class="form-label">Foto Berkas
+                            </label>
                         @if ($employee->original_filename)
                             <h5>{{ $employee->original_filename }}</h5>
                             <a href="{{ route('employees.downloadFile', ['employeeId' => $employee->id]) }}"
