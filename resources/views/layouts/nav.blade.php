@@ -6,7 +6,7 @@ $currentRouteName = Route::currentRouteName();
     <div class="container">
         <!-- Brand -->
         <a href="{{ route('home') }}" class="navbar-brand mb-0 h1">
-            <i class="bi-hexagon-fill me-2"></i> Data Master
+            <i class="bi-hexagon-fill me-2"></i> Logistic Asset Management
         </a>
 
         <!-- Toggler -->
@@ -22,7 +22,7 @@ $currentRouteName = Route::currentRouteName();
                     <a href="{{ route('home') }}" class="nav-link @if($currentRouteName == 'home') active @endif">Home</a>
                 </li>
                 <li class="nav-item col-2 col-md-auto">
-                    <a href="{{ route('employees.index') }}" class="nav-link @if($currentRouteName == 'employees.index') active @endif">Employee List</a>
+                    <a href="{{ route('employees.index') }}" class="nav-link @if($currentRouteName == 'employees.index') active @endif">List Barang</a>
                 </li>
             </ul>
 

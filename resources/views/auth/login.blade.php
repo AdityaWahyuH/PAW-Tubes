@@ -19,7 +19,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #007bff;
+            background-color: #a0a6ad;
         }
 
         .login-container {
@@ -61,7 +61,7 @@
 
         .input-container input:focus {
             outline: none;
-            border-color: #007bff;
+            border-color: #9da1a5;
         }
 
         /* Style untuk input yang error */
@@ -86,7 +86,7 @@
             margin-top: 10px;
             border: none;
             border-radius: 5px;
-            background-color: #007bff;
+            background-color: #0e0e0f;
             color: white;
             font-size: 16px;
             cursor: pointer;
@@ -97,7 +97,7 @@
         }
 
         .login-container button:hover {
-            background-color: #0056b3;
+            background-color: #080808;
         }
 
         .login-container button i {
