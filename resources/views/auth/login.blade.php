@@ -19,7 +19,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #a0a6ad;
+            background-color: #99c205;
         }
 
         .login-container {
@@ -35,7 +35,7 @@
             width: 35px;
             height: 40px;
             margin: 0 auto 20px;
-            background-color: #b7b9bb;
+            background-color: #99c205;
             clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
         }
 

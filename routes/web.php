@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\Auth\LoginController; // Tambahkan ini untuk LoginController
+use App\Http\Controllers\BarangController;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 
@@ -36,12 +37,6 @@ Route::get('/home', [HomeController::class, 'index'])->name('home')->middleware(
 
 // Route profile (dilindungi auth)
 Route::get('/profile', ProfileController::class)->name('profile')->middleware('auth');
-
-// Resource route untuk employees (otomatis mencakup semua operasi CRUD)
-Route::resource('employees', EmployeeController::class)->middleware('auth');
-
-// Route khusus download file untuk employees
-Route::get('download-file/{employeeId}', [EmployeeController::class, 'downloadFile'])->name('employees.downloadFile');
 
 // Laravel Auth routes
 Auth::routes();
@@ -115,7 +110,7 @@ Route::get('/delete-public-file', function (Request $request) {
     return 'Deleted';
 });
 
-Route::get('download-file/{employeeId}', [EmployeeController::class, 'downloadFile'])->name('employees.downloadFile');
+Route::resource('barang', BarangController::class);
 
 
 
