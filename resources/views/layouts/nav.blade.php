@@ -22,7 +22,7 @@ $currentRouteName = Route::currentRouteName();
                     <a href="{{ route('home') }}" class="nav-link @if($currentRouteName == 'home') active @endif">Home</a>
                 </li>
                 <li class="nav-item col-2 col-md-auto">
-                    <a href="{{ route('employees.index') }}" class="nav-link @if($currentRouteName == 'employees.index') active @endif">List Barang</a>
+                    <a href="{{ route('barang.index') }}" class="nav-link @if($currentRouteName == 'barang.index') active @endif">List Barang</a>
                 </li>
             </ul>
 
