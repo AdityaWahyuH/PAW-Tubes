@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'List Employee')
+@section('title', 'List Barang')
 
 @section('content')
     <div class="container mt-4">
@@ -10,8 +10,7 @@
             </div>
             <div class="col-lg-3 col-xl-2">
                 <div class="d-grid gap-2">
-                    <a href="{{ route('employees.create') }}" class="btn btn-primary btn-sm">
-                        <i class="bi-plus-circle me-2"></i> Tambahkan Barang
+                    <a href="{{ route('employees.create') }}" class="btn btn-primary btn-sm" style="background-color: #92b906;">                        <i class="bi-plus-circle me-2"></i> Tambahkan Barang
                     </a>
                 </div>
             </div>

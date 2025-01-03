@@ -10,7 +10,7 @@
             <div class="row justify-content-center">
                 <div class="p-5 bg-light rounded-3 border col-xl-6">
                     <div class="mb-3 text-center">
-                        <i class="bi-person-circle fs-1"></i>
+                        <i class="bi-box me-2" style="font-size: 60px;"></i></a>
                         <h4>Edit Employee</h4>
                     </div>
                     <hr>

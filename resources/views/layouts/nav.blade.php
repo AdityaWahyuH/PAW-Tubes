@@ -2,11 +2,11 @@
 $currentRouteName = Route::currentRouteName();
 @endphp
 
-<nav class="navbar navbar-expand-md navbar-dark bg-primary" style="margin-bottom: -15px;">
+<nav class="navbar navbar-expand-md navbar-primary" style="background-color: #99c205; margin-bottom: -15px;">
     <div class="container">
         <!-- Brand -->
         <a href="{{ route('home') }}" class="navbar-brand mb-0 h1">
-            <i class="bi-hexagon-fill me-2"></i> Logistic Asset Management
+            <i class="bi-box me-2"></i> Logistic Asset Management
         </a>
 
         <!-- Toggler -->
@@ -53,7 +53,7 @@ $currentRouteName = Route::currentRouteName();
                            data-bs-toggle="dropdown"
                            aria-haspopup="true"
                            aria-expanded="false"
-                           style="text-decoration: none; color: white;">
+                           style="text-decoration: none; color: rgb(255, 255, 255);">
                             <i class="bi-person-circle me-1" style="color: white;"></i> {{ Auth::user()->name }}
                         </a>
 
