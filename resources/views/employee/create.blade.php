@@ -9,7 +9,7 @@
             <div class="row justify-content-center">
                 <div class="p-5 bg-light rounded-3 border col-xl-6">
                     <div class="mb-3 text-center">
-                        <i class="bi-person-circle fs-1"></i>
+                        <i class="bi-box me-2" style="font-size: 60px;"></i></a>
                         <h4>Tambahkan Barang</h4>
                     </div>
                     <hr>
@@ -29,7 +29,7 @@
                             @enderror
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="barangPinjam" class="form-label">Barang Pinjam</label>
+                            <label for="barangPinjam" class="form-label">Email</label>
                             <input class="form-control @error('barangPinjam') is-invalid @enderror" type="text" name="email" id="email" value="{{ old('email') }}" placeholder="Enter Email">
                             @error('barangPinjam')
                                 <div class="invalid-feedback">{{ $message }}</div>
